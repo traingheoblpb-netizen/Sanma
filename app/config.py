@@ -1,5 +1,8 @@
-from pydantic import BaseSettings
-from pathlib import Path
+try:
+    from pydantic_settings import BaseSettings
+except ImportError:  # pragma: no cover
+    from pydantic import BaseSettings
+
 
 class Settings(BaseSettings):
     DATABASE_URL: str = "sqlite:///./data/couponhunter.db"
@@ -10,5 +13,6 @@ class Settings(BaseSettings):
 
     class Config:
         env_file = ".env"
+
 
 settings = Settings()

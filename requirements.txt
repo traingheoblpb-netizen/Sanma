@@ -2,6 +2,7 @@ fastapi
 uvicorn[standard]
 SQLAlchemy>=2.0
 pydantic
+pydantic-settings
 httpx
 beautifulsoup4
 lxml
