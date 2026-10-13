@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin - CouponHunter</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <header><h1>Admin</h1></header>
+    <main>
+      <section id="overview"></section>
+      <section id="sources"></section>
+      <section id="import">
+        <form id="importForm" enctype="multipart/form-data">
+          <input type="number" id="source_id" name="source_id" placeholder="Source ID">
+          <input type="file" id="file" name="file">
+          <button type="submit">Import</button>
+        </form>
+      </section>
+    </main>
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>

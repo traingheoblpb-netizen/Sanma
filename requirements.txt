@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+SQLAlchemy>=2.0
+pydantic
+httpx
+beautifulsoup4
+lxml
+Jinja2
+python-dotenv
+APScheduler
+pytest
+pytest-asyncio
+python-multipart
